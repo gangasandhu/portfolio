@@ -118,7 +118,7 @@ const Header: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="#contact"
+                  href="/contact"
                   className="bg-pink-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-pink-600 transition duration-300 text-center"
                   onClick={toggleMobileMenu}
                 >

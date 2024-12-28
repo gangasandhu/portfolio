@@ -74,7 +74,7 @@ const Socials: React.FC = () => {
 
         {/* Social Icons */}
         <motion.div
-          className="flex justify-center space-x-8"
+          className="flex flex-wrap justify-center space-x-8"
           initial="hidden"
           whileInView="visible"
           variants={{
