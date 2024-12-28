@@ -1,10 +1,10 @@
 import React from "react";
-import heroImage from "../assets/images/hero-img.png";
+import heroImage from "../assets/images/hero-img2.png";
 import { motion } from "framer-motion"; // For animations
 
 const Hero: React.FC = () => {
     return (
-        <section className="bg-gradient-to-r from-indigo-900 to-gray-900 px-6 lg:px-16 text-white">
+        <section className="px-6 lg:px-16 text-white h-screen overflow-hidden">
             <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between min-h-screen py-12">
                 {/* Left Content */}
                 <div className="lg:w-1/2 text-center lg:text-left">
@@ -54,11 +54,11 @@ const Hero: React.FC = () => {
                     transition={{ delay: 0.6, duration: 0.8 }}
                     className="lg:w-1/2 flex justify-center items-center mt-10 lg:mt-0 relative"
                 >
-                    <div className="w-80 h-80 rounded-full overflow-hidden border-8 border-indigo-400 shadow-xl">
+                    <div className="w-80 h-80 bg-neutral-900 rounded-full overflow-hidden border-8 border-indigo-400 lg:w-auto lg:h-auto lg:bg-transparent lg:border-0 lg:rounded-none">
                         <img
                             src={heroImage}
                             alt="Ganga Singh"
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-contain grayscale"
                         />
                     </div>
                     {/* Decorative Elements */}

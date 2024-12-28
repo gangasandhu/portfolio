@@ -1,19 +1,24 @@
 import React from "react";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Skills from "./components/Skills";
+import Home from "./pages/Home";
+import Footer from "./components/Footer";
 
 const App: React.FC = () => {
   return (
-    <>
-      <Header />
-      <main className="pt-16"> 
-        <Hero />
-        <About />
-        <Skills />
-      </main>
-    </>
+    <div
+      className="bg-gradient-to-r from-indigo-900 to-gray-900 min-h-screen text-white"
+    >
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />}>
+          </Route>
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+
+    </div>
   );
 };
 

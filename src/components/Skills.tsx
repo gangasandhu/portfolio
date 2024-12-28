@@ -81,7 +81,7 @@ const skills = [
 const Skills: React.FC = () => {
   return (
     <section
-      className="bg-gray-900 text-gray-100 px-6 lg:px-16 py-16"
+      className="text-gray-100 px-6 lg:px-16 py-16"
       id="skills"
     >
       <div className="container mx-auto">
