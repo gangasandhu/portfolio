@@ -33,13 +33,13 @@ const Hero: React.FC = () => {
                         className="mt-8 flex justify-center lg:justify-start space-x-4"
                     >
                         <a
-                            href="#portfolio"
+                            href="#projects"
                             className="bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-3 rounded-lg shadow-md transition transform hover:scale-105"
                         >
                             Explore My Work
                         </a>
                         <a
-                            href="#contact"
+                            href="/contact"
                             className="bg-transparent border-2 border-pink-500 text-pink-500 px-6 py-3 rounded-lg hover:bg-pink-500 hover:text-white transition transform hover:scale-105"
                         >
                             Let's Connect

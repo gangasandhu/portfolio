@@ -34,10 +34,13 @@ const About: React.FC = () => {
           viewport={{ once: true }}
         >
           <p className="text-lg md:text-xl text-gray-300 mb-6">
-            I'm Ganga Singh, a dedicated professional with a passion for fostering meaningful connections and driving team success. Over the past 8 years, I've honed my abilities in communication, leadership, and strategic thinking, enabling me to contribute effectively to diverse projects and collaborative environments.
+            I'm a skilled software developer with a strong foundation in JavaScript, React, and Node.js. Over the years, I've honed my expertise in building scalable, interactive web applications and deploying them efficiently using tools like Docker, CI/CD pipelines, and AWS. My passion for problem-solving and collaborative teamwork drives me to deliver impactful solutions that make a difference.
+          </p>
+          <p className="text-lg md:text-xl text-gray-300 mb-6">
+            My journey as a developer began with a deep curiosity for technology and its potential to solve complex problems. Through hands-on projects like developing a real-time chess game and an AI-assisted code-learning application, I've built expertise in creating seamless user experiences and robust back-end systems.
           </p>
           <p className="text-lg md:text-xl text-gray-300">
-            My journey is driven by a love for technology, continuous learning, and a commitment to excellence. I thrive in dynamic environments where I can leverage my skills to solve complex problems and deliver impactful solutions.
+          I have completed an Associate of Science in Computer Science and a citation in Full-Stack Web development at Langara College.
           </p>
         </motion.div>
 
@@ -101,10 +104,10 @@ const About: React.FC = () => {
           className="mt-12 flex justify-center"
         >
           <a
-            href="#portfolio"
+            href="#projects"
             className="bg-indigo-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-indigo-600 transition duration-300 flex items-center"
           >
-            View My Portfolio
+            View My Projects
             <FaComments className="ml-2 w-5 h-5" />
           </a>
         </motion.div>

@@ -37,31 +37,30 @@ interface Project {
   link: string;
   technologies: (keyof typeof technologyIcons)[];
 }
-
 const projects: Project[] = [
   {
-    name: "Project Alpha",
-    image: "https://via.placeholder.com/400x300.png?text=Project+Alpha",
+    name: "Devlink",
+    image: "https://via.placeholder.com/400x300.png?text=Devlink",
     description:
-      "A cutting-edge web application that leverages React and Node.js to deliver seamless user experiences. Features include real-time data processing, responsive design, and secure authentication.",
+      "A comprehensive platform for developers, content creators, and tech enthusiasts. Features include blog management, online coding, and social networking capabilities.",
     link: "#",
-    technologies: ["JavaScript", "React", "Node.js", "Docker"],
+    technologies: ["JavaScript", "React", "Node.js", "Git"],
   },
   {
-    name: "Project Beta",
-    image: "https://via.placeholder.com/400x300.png?text=Project+Beta",
+    name: "SmartScript",
+    image: "https://via.placeholder.com/400x300.png?text=SmartScript",
     description:
-      "An innovative mobile app developed with React Native, focusing on user engagement and intuitive navigation. Incorporates advanced features like push notifications and in-app analytics.",
+      "An AI-assisted code-learning platform with an integrated code editor, compiler, and AI assistant. Built to provide an interactive and engaging experience for coding enthusiasts.",
     link: "#",
-    technologies: ["TypeScript", "React", "Redux", "Docker"],
+    technologies: ["React", "Javascript", "Github", "CI/CD", "Docker"],
   },
   {
-    name: "Project Gamma",
-    image: "https://via.placeholder.com/400x300.png?text=Project+Gamma",
+    name: "Chess Game",
+    image: "https://github.com/harpreet1o/2650Project/blob/main/FinalProjectDiagram.drawio.png?raw=true",
     description:
-      "A robust backend system built with Node.js and Express, designed to handle high traffic and ensure data integrity. Utilizes Docker for containerization and AWS for scalable deployment.",
+      "A real-time chess game application with user authentication, game history, and live gameplay. Leveraged Redis for caching and Socket.io for real-time functionality.",
     link: "#",
-    technologies: ["JavaScript", "Node.js", "Go", "Docker"],
+    technologies: ["Node.js", "React", "Github", "JavaScript", "AWS"],
   },
 ];
 

@@ -28,19 +28,19 @@ const Header: React.FC = () => {
             About
           </a>
           <a
-            href="#services"
+            href="#skills"
             className="text-gray-300 hover:text-indigo-400 transition duration-300"
           >
-            Services
+            Skills
           </a>
           <a
-            href="#portfolio"
+            href="#projects"
             className="text-gray-300 hover:text-indigo-400 transition duration-300"
           >
-            Portfolio
+            Projects
           </a>
           <a
-            href="#contact"
+            href="/contact"
             className="text-gray-300 hover:text-indigo-400 transition duration-300"
           >
             Contact
@@ -49,7 +49,7 @@ const Header: React.FC = () => {
 
         {/* CTA Button */}
         <a
-          href="#contact"
+          href="/contact"
           className="hidden lg:block bg-pink-500 text-white px-5 py-2 rounded-lg shadow-md hover:bg-pink-600 transition duration-300"
         >
           Let's Connect
