@@ -15,46 +15,46 @@ const Header: React.FC = () => {
     <header className="bg-gradient-to-r from-indigo-900 to-gray-900 fixed top-0 left-0 w-full z-50 shadow-lg">
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
-        <a href="/portfolio" className="text-white text-2xl font-extrabold flex items-center">
+        <Link to="/portfolio" className="text-white text-2xl font-extrabold flex items-center">
           <span className="text-indigo-400">Ganga</span>
           <span className="text-pink-500">Singh</span>
-        </a>
+        </Link>
 
         {/* Navigation Links */}
         <nav className="hidden lg:flex space-x-8">
-          <a
-            href="/portfolio/about"
+          <Link
+            to="/portfolio/about"
             className="text-gray-300 hover:text-indigo-400 transition duration-300"
           >
             About
-          </a>
-          <a
-            href="/portfolio/skills"
+          </Link>
+          <Link
+            to="/portfolio/skills"
             className="text-gray-300 hover:text-indigo-400 transition duration-300"
           >
             Skills
-          </a>
-          <a
-            href="/portfolio/projects"
+          </Link>
+          <Link
+            to="/portfolio/projects"
             className="text-gray-300 hover:text-indigo-400 transition duration-300"
           >
             Projects
-          </a>
-          <a
-            href="/portfolio/contact"
+          </Link>
+          <Link
+            to="/portfolio/contact"
             className="text-gray-300 hover:text-indigo-400 transition duration-300"
           >
             Contact
-          </a>
+          </Link>
         </nav>
 
         {/* CTA Button */}
-        <a
-          href="/portfolio/contact"
+        <Link
+          to="/portfolio/contact"
           className="hidden lg:block bg-pink-500 text-white px-5 py-2 rounded-lg shadow-md hover:bg-pink-600 transition duration-300"
         >
           Let's Connect
-        </a>
+        </Link>
 
         {/* Mobile Menu Button */}
         <button
@@ -91,40 +91,40 @@ const Header: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <a
-                  href="/portfolio/skills"
+                <Link
+                  to="/portfolio/skills"
                   className="text-gray-300 hover:text-indigo-400 transition duration-300"
                   onClick={toggleMobileMenu}
                 >
                   Skills
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/portfolio/projects"
+                <Link
+                  to="/portfolio/projects"
                   className="text-gray-300 hover:text-indigo-400 transition duration-300"
                   onClick={toggleMobileMenu}
                 >
                   Projects
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/portfolio/contact"
+                <Link
+                  to="/portfolio/contact"
                   className="text-gray-300 hover:text-indigo-400 transition duration-300"
                   onClick={toggleMobileMenu}
                 >
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/portfolio/contact"
+                <Link
+                  to="/portfolio/contact"
                   className="bg-pink-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-pink-600 transition duration-300 text-center"
                   onClick={toggleMobileMenu}
                 >
                   Let's Connect
-                </a>
+                </Link>
               </li>
             </ul>
           </motion.nav>

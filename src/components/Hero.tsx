@@ -1,6 +1,7 @@
 import React from "react";
 import heroImage from "../assets/images/hero-img2.png";
 import { motion } from "framer-motion"; // For animations
+import { Link } from "react-router";
 
 const Hero: React.FC = () => {
     return (
@@ -38,12 +39,12 @@ const Hero: React.FC = () => {
                         >
                             Explore My Work
                         </a>
-                        <a
-                            href="/contact"
+                        <Link
+                            to="/contact"
                             className="bg-transparent border-2 border-pink-500 text-pink-500 px-6 py-3 rounded-lg hover:bg-pink-500 hover:text-white transition transform hover:scale-105"
                         >
                             Let's Connect
-                        </a>
+                        </Link>
                     </motion.div>
                 </div>
 

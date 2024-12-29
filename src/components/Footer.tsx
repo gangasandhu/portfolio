@@ -1,6 +1,7 @@
 // src/components/Footer.tsx
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
   return (
@@ -28,44 +29,44 @@ const Footer: React.FC = () => {
         >
           <ul className="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-6">
             <li>
-              <a
-                href="/portfolio"
+              <Link
+                to="/portfolio"
                 className="hover:text-indigo-400 transition-colors duration-300"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/portfolio/about"
+              <Link
+                to="/portfolio/about"
                 className="hover:text-indigo-400 transition-colors duration-300"
               >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/portfolio/skills"
+              <Link
+                to="/portfolio/skills"
                 className="hover:text-indigo-400 transition-colors duration-300"
               >
                 Skills
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/portfolio/projects"
+              <Link
+                to="/portfolio/projects"
                 className="hover:text-indigo-400 transition-colors duration-300"
               >
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/portfolio/contact"
+              <Link
+                to="/portfolio/contact"
                 className="hover:text-indigo-400 transition-colors duration-300"
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </motion.nav>
