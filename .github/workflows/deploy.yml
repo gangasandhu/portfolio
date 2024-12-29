@@ -19,6 +19,11 @@ permissions:
 concurrency:
   group: 'pages'
   cancel-in-progress: true
+
+env:
+  VITE_SERVICE_ID: ${{ secrets.VITE_SERVICE_ID }}
+  VITE_TEMPLATE_ID: ${{ secrets.VITE_TEMPLATE_ID }}
+  VITE_PUBLIC_KEY: ${{ secrets.VITE_PUBLIC_KEY }}
   
 jobs:
   # Single deploy job since we're just deploying
