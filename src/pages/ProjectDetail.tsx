@@ -1,6 +1,6 @@
 // src/pages/ProjectDetail.tsx
 import React from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Iframe from 'react-iframe';
 import { projects, Project } from "../data/projects";
 import { motion } from "framer-motion";
