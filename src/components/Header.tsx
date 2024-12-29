@@ -15,7 +15,7 @@ const Header: React.FC = () => {
     <header className="bg-gradient-to-r from-indigo-900 to-gray-900 fixed top-0 left-0 w-full z-50 shadow-lg">
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
-        <a href="/" className="text-white text-2xl font-extrabold flex items-center">
+        <a href="/portfolio" className="text-white text-2xl font-extrabold flex items-center">
           <span className="text-indigo-400">Ganga</span>
           <span className="text-pink-500">Singh</span>
         </a>
@@ -23,25 +23,25 @@ const Header: React.FC = () => {
         {/* Navigation Links */}
         <nav className="hidden lg:flex space-x-8">
           <a
-            href="/#about"
+            href="/portfolio/about"
             className="text-gray-300 hover:text-indigo-400 transition duration-300"
           >
             About
           </a>
           <a
-            href="/#skills"
+            href="/portfolio/skills"
             className="text-gray-300 hover:text-indigo-400 transition duration-300"
           >
             Skills
           </a>
           <a
-            href="/#projects"
+            href="/portfolio/projects"
             className="text-gray-300 hover:text-indigo-400 transition duration-300"
           >
             Projects
           </a>
           <a
-            href="/contact"
+            href="/portfolio/contact"
             className="text-gray-300 hover:text-indigo-400 transition duration-300"
           >
             Contact
@@ -50,7 +50,7 @@ const Header: React.FC = () => {
 
         {/* CTA Button */}
         <a
-          href="/contact"
+          href="/portfolio/contact"
           className="hidden lg:block bg-pink-500 text-white px-5 py-2 rounded-lg shadow-md hover:bg-pink-600 transition duration-300"
         >
           Let's Connect
@@ -83,7 +83,7 @@ const Header: React.FC = () => {
             <ul className="flex flex-col space-y-4 px-6 py-4">
               <li>
                 <Link
-                  to="/#about"
+                  to="/portfolio/about"
                   className="text-gray-300 hover:text-indigo-400 transition duration-300"
                   onClick={toggleMobileMenu}
                 >
@@ -92,7 +92,7 @@ const Header: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="/#skills"
+                  href="/portfolio/skills"
                   className="text-gray-300 hover:text-indigo-400 transition duration-300"
                   onClick={toggleMobileMenu}
                 >
@@ -101,7 +101,7 @@ const Header: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="/#projects"
+                  href="/portfolio/projects"
                   className="text-gray-300 hover:text-indigo-400 transition duration-300"
                   onClick={toggleMobileMenu}
                 >
@@ -110,7 +110,7 @@ const Header: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="/#contact"
+                  href="/portfolio/contact"
                   className="text-gray-300 hover:text-indigo-400 transition duration-300"
                   onClick={toggleMobileMenu}
                 >
@@ -119,7 +119,7 @@ const Header: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="/contact"
+                  href="/portfolio/contact"
                   className="bg-pink-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-pink-600 transition duration-300 text-center"
                   onClick={toggleMobileMenu}
                 >

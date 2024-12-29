@@ -32,42 +32,6 @@ const technologyIcons: { [key: string]: JSX.Element } = {
   "CI/CD": <SiIced className="w-6 h-6 text-purple-500" />,
 };
 
-// // Dummy Projects Array with Top 4 Technologies
-// interface Project {
-//   name: string;
-//   image: string;
-//   description: string;
-//   link: string;
-//   technologies: (keyof typeof technologyIcons)[];
-// }
-
-// const projects: Project[] = [
-//   {
-//     name: "Devlink",
-//     image: "https://github.com/gangasandhu/devlink/blob/main/showcase/Home.png?raw=true",
-//     description:
-//       "A comprehensive platform for developers, content creators, and tech enthusiasts. Features include blog management, online coding, and social networking capabilities.",
-//     link: "#",
-//     technologies: ["JavaScript", "React", "Node.js", "GitHub"],
-//   },
-//   {
-//     name: "SmartScript",
-//     image: "https://github.com/gangasandhu/smart-script/blob/main/showcase/home.png?raw=true",
-//     description:
-//       "An AI-assisted code-learning platform with an integrated code editor, compiler, and AI assistant. Built to provide an interactive and engaging experience for coding enthusiasts.",
-//     link: "#",
-//     technologies: ["React", "JavaScript", "GitHub", "CI/CD", "Docker"],
-//   },
-//   {
-//     name: "Chess Game",
-//     image: "https://upload.wikimedia.org/wikipedia/commons/5/51/SmallFish_screenshot_%28Computer_to_move%2C_computer_analysis_shown%29.png",
-//     description:
-//       "A real-time chess game application with user authentication, game history, and live gameplay. Leveraged Redis for caching and Socket.io for real-time functionality.",
-//     link: "#",
-//     technologies: ["Node.js", "React", "GitHub", "JavaScript", "AWS"],
-//   },
-// ];
-
 const Projects: React.FC = () => {
   return (
     <section
@@ -144,7 +108,7 @@ const Projects: React.FC = () => {
 
                 {/* Project Link */}
                 <Link
-                  to={`/projects/${project.title}`}
+                  to={`/portfolio/projects/${project.title}`}
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-indigo-400 hover:text-indigo-300 font-semibold"
                 >

@@ -6,19 +6,25 @@ import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import ProjectDetail from "./pages/ProjectDetail";
 import ScrollToTop from "./components/ScrollToTop";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import About from "./components/About";
 
 const App: React.FC = () => {
   return (
     <div
-      className="bg-gradient-to-r from-indigo-900 to-gray-900 min-h-screen text-white"
+      className="bg-gradient-to-r from-indigo-900 to-gray-900 min-h-screen text-white pt-16"
     >
       <BrowserRouter>
         <ScrollToTop />
         <Header />
         <Routes>
-          <Route path="/projects/:title" element={<ProjectDetail />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/" element={<Home />} />
+          <Route path="portfolio/projects/:title" element={<ProjectDetail />} />
+          <Route path="portfolio/contact" element={<Contact />} />
+          <Route path="portfolio/skills" element={<Skills />} />
+          <Route path="portfolio/projects" element={<Projects />} />
+          <Route path="portfolio/about" element={<About />} />
+          <Route path="portfolio/" element={<Home />} />
         </Routes>
         <Footer />
       </BrowserRouter>
