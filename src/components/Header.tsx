@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa"; // Importing Font Awesome Icons
+import { Link } from "react-router";
 
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -22,19 +23,19 @@ const Header: React.FC = () => {
         {/* Navigation Links */}
         <nav className="hidden lg:flex space-x-8">
           <a
-            href="#about"
+            href="/#about"
             className="text-gray-300 hover:text-indigo-400 transition duration-300"
           >
             About
           </a>
           <a
-            href="#skills"
+            href="/#skills"
             className="text-gray-300 hover:text-indigo-400 transition duration-300"
           >
             Skills
           </a>
           <a
-            href="#projects"
+            href="/#projects"
             className="text-gray-300 hover:text-indigo-400 transition duration-300"
           >
             Projects
@@ -81,35 +82,35 @@ const Header: React.FC = () => {
           >
             <ul className="flex flex-col space-y-4 px-6 py-4">
               <li>
-                <a
-                  href="#about"
+                <Link
+                  to="/#about"
                   className="text-gray-300 hover:text-indigo-400 transition duration-300"
                   onClick={toggleMobileMenu}
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li>
                 <a
-                  href="#services"
+                  href="/#skills"
                   className="text-gray-300 hover:text-indigo-400 transition duration-300"
                   onClick={toggleMobileMenu}
                 >
-                  Services
+                  Skills
                 </a>
               </li>
               <li>
                 <a
-                  href="#portfolio"
+                  href="/#projects"
                   className="text-gray-300 hover:text-indigo-400 transition duration-300"
                   onClick={toggleMobileMenu}
                 >
-                  Portfolio
+                  Projects
                 </a>
               </li>
               <li>
                 <a
-                  href="#contact"
+                  href="/#contact"
                   className="text-gray-300 hover:text-indigo-400 transition duration-300"
                   onClick={toggleMobileMenu}
                 >
