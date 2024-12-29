@@ -19,12 +19,12 @@ const App: React.FC = () => {
         <ScrollToTop />
         <Header />
         <Routes>
-          <Route path="portfolio/projects/:title" element={<ProjectDetail />} />
-          <Route path="portfolio/contact" element={<Contact />} />
-          <Route path="portfolio/skills" element={<Skills />} />
-          <Route path="portfolio/projects" element={<Projects />} />
-          <Route path="portfolio/about" element={<About />} />
-          <Route path="portfolio/" element={<Home />} />
+          <Route path="/portfolio/projects/:title" element={<ProjectDetail />} />
+          <Route path="/portfolio/contact" element={<Contact />} />
+          <Route path="/portfolio/skills" element={<Skills />} />
+          <Route path="/portfolio/projects" element={<Projects />} />
+          <Route path="/portfolio/about" element={<About />} />
+          <Route path="/portfolio/" element={<Home />} />
         </Routes>
         <Footer />
       </BrowserRouter>
