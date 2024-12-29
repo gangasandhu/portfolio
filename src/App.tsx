@@ -3,6 +3,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
+import ProjectDetail from "./pages/ProjectDetail";
 
 const App: React.FC = () => {
   return (
@@ -12,6 +13,8 @@ const App: React.FC = () => {
       <BrowserRouter>
         <Header />
         <Routes>
+          <Route path="/projects/:title" element={<ProjectDetail />} />
+
           <Route path="/" element={<Home />}>
           </Route>
         </Routes>

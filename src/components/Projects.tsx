@@ -1,6 +1,8 @@
 // src/components/Projects.tsx
 import React from "react";
 import { motion } from "framer-motion";
+import { projects, Project } from "../data/projects";
+
 import {
   FaExternalLinkAlt,
   FaReact,
@@ -12,6 +14,7 @@ import {
   FaGitAlt,
 } from "react-icons/fa";
 import { SiJavascript, SiGo, SiIced, SiRedux, SiTypescript } from "react-icons/si";
+import { Link } from "react-router";
 
 // Technology Icons Mapping
 const technologyIcons: { [key: string]: JSX.Element } = {
@@ -25,44 +28,45 @@ const technologyIcons: { [key: string]: JSX.Element } = {
   Python: <FaPython className="w-6 h-6 text-blue-600" />,
   Go: <SiGo className="w-6 h-6 text-teal-500" />,
   Git: <FaGitAlt className="w-6 h-6 text-red-500" />,
-  GitHub: <FaGithub className="w-6 h-6 text-gray-700" />,
+  GitHub: <FaGithub className="w-6 h-6 text-gray-700 bg-white" />,
   "CI/CD": <SiIced className="w-6 h-6 text-purple-500" />,
 };
 
-// Dummy Projects Array with Top 4 Technologies
-interface Project {
-  name: string;
-  image: string;
-  description: string;
-  link: string;
-  technologies: (keyof typeof technologyIcons)[];
-}
-const projects: Project[] = [
-  {
-    name: "Devlink",
-    image: "https://via.placeholder.com/400x300.png?text=Devlink",
-    description:
-      "A comprehensive platform for developers, content creators, and tech enthusiasts. Features include blog management, online coding, and social networking capabilities.",
-    link: "#",
-    technologies: ["JavaScript", "React", "Node.js", "Git"],
-  },
-  {
-    name: "SmartScript",
-    image: "https://via.placeholder.com/400x300.png?text=SmartScript",
-    description:
-      "An AI-assisted code-learning platform with an integrated code editor, compiler, and AI assistant. Built to provide an interactive and engaging experience for coding enthusiasts.",
-    link: "#",
-    technologies: ["React", "Javascript", "Github", "CI/CD", "Docker"],
-  },
-  {
-    name: "Chess Game",
-    image: "https://github.com/harpreet1o/2650Project/blob/main/FinalProjectDiagram.drawio.png?raw=true",
-    description:
-      "A real-time chess game application with user authentication, game history, and live gameplay. Leveraged Redis for caching and Socket.io for real-time functionality.",
-    link: "#",
-    technologies: ["Node.js", "React", "Github", "JavaScript", "AWS"],
-  },
-];
+// // Dummy Projects Array with Top 4 Technologies
+// interface Project {
+//   name: string;
+//   image: string;
+//   description: string;
+//   link: string;
+//   technologies: (keyof typeof technologyIcons)[];
+// }
+
+// const projects: Project[] = [
+//   {
+//     name: "Devlink",
+//     image: "https://github.com/gangasandhu/devlink/blob/main/showcase/Home.png?raw=true",
+//     description:
+//       "A comprehensive platform for developers, content creators, and tech enthusiasts. Features include blog management, online coding, and social networking capabilities.",
+//     link: "#",
+//     technologies: ["JavaScript", "React", "Node.js", "GitHub"],
+//   },
+//   {
+//     name: "SmartScript",
+//     image: "https://github.com/gangasandhu/smart-script/blob/main/showcase/home.png?raw=true",
+//     description:
+//       "An AI-assisted code-learning platform with an integrated code editor, compiler, and AI assistant. Built to provide an interactive and engaging experience for coding enthusiasts.",
+//     link: "#",
+//     technologies: ["React", "JavaScript", "GitHub", "CI/CD", "Docker"],
+//   },
+//   {
+//     name: "Chess Game",
+//     image: "https://upload.wikimedia.org/wikipedia/commons/5/51/SmallFish_screenshot_%28Computer_to_move%2C_computer_analysis_shown%29.png",
+//     description:
+//       "A real-time chess game application with user authentication, game history, and live gameplay. Leveraged Redis for caching and Socket.io for real-time functionality.",
+//     link: "#",
+//     technologies: ["Node.js", "React", "GitHub", "JavaScript", "AWS"],
+//   },
+// ];
 
 const Projects: React.FC = () => {
   return (
@@ -139,14 +143,13 @@ const Projects: React.FC = () => {
                 </div>
 
                 {/* Project Link */}
-                <a
-                  href={project.link}
-                  target="_blank"
+                <Link
+                  to={`/projects/${project.title}`}
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-indigo-400 hover:text-indigo-300 font-semibold"
                 >
                   View Project <FaExternalLinkAlt className="ml-2" />
-                </a>
+                </Link>
               </div>
             </motion.div>
           ))}
