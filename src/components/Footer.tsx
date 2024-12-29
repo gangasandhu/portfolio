@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
           <ul className="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-6">
             <li>
               <a
-                href="#hero"
+                href="/"
                 className="hover:text-indigo-400 transition-colors duration-300"
               >
                 Home
@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
             </li>
             <li>
               <a
-                href="#about"
+                href="/#about"
                 className="hover:text-indigo-400 transition-colors duration-300"
               >
                 About
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
             </li>
             <li>
               <a
-                href="#skills"
+                href="/#skills"
                 className="hover:text-indigo-400 transition-colors duration-300"
               >
                 Skills
@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
             </li>
             <li>
               <a
-                href="#projects"
+                href="/#projects"
                 className="hover:text-indigo-400 transition-colors duration-300"
               >
                 Projects
@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
             </li>
             <li>
               <a
-                href="#contact"
+                href="/contact"
                 className="hover:text-indigo-400 transition-colors duration-300"
               >
                 Contact
