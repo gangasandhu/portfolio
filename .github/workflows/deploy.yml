@@ -11,12 +11,15 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Install Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: '20' # Adjust Node.js version as needed
+
+    - name: Install Netlify
+      run: npm install netlify-cli@17.10.1 -g
 
     - name: Install dependencies
       run: npm install
@@ -25,9 +28,9 @@ jobs:
       run: npm run build # Adjust this if your build script is different
 
     - name: Deploy to Netlify
-      uses: netlify/actions-cli@v2.2.0
-      with:
-        args: deploy --prod --dir=dist
-      env:
-        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+      id: netlify_deploy
+      run: |
+        netlify deploy \
+          --dir dist \
+          --site ${{ secrets.NETLIFY_SITE_ID }} \
+          --auth ${{ secrets.NETLIFY_AUTH_TOKEN }}
