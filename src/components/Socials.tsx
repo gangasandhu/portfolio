@@ -93,7 +93,7 @@ const Socials: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={social.name}
-              className="flex items-center justify-center rounded-full p-4"
+              className="flex items-center justify-center rounded-full md:p-4 "
               style={{ backgroundColor: social.bgColor }}
               variants={{
                 hidden: { opacity: 0, scale: 0.5 },
