@@ -108,7 +108,7 @@ const Projects: React.FC = () => {
 
                 {/* Project Link */}
                 <Link
-                  to={`/portfolio/projects/${project.title}`}
+                  to={`/projects/${project.title}`}
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-indigo-400 hover:text-indigo-300 font-semibold"
                 >

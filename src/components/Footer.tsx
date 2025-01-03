@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
           <ul className="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-6">
             <li>
               <Link
-                to="/portfolio"
+                to=""
                 className="hover:text-indigo-400 transition-colors duration-300"
               >
                 Home
@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
             </li>
             <li>
               <Link
-                to="/portfolio/about"
+                to="/about"
                 className="hover:text-indigo-400 transition-colors duration-300"
               >
                 About
@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
             </li>
             <li>
               <Link
-                to="/portfolio/skills"
+                to="/skills"
                 className="hover:text-indigo-400 transition-colors duration-300"
               >
                 Skills
@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
             </li>
             <li>
               <Link
-                to="/portfolio/projects"
+                to="/projects"
                 className="hover:text-indigo-400 transition-colors duration-300"
               >
                 Projects
@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
             </li>
             <li>
               <Link
-                to="/portfolio/contact"
+                to="/contact"
                 className="hover:text-indigo-400 transition-colors duration-300"
               >
                 Contact
