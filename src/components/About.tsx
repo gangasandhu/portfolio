@@ -10,7 +10,7 @@ import {
 const About: React.FC = () => {
   return (
     <section
-      className="bg-gray-900 px-6 mx-auto w-[80vw] border-none rounded-lg lg:px-16 text-gray-100 py-16"
+      className="bg-gray-900 px-6 mx-auto w-[90vw] border-none rounded-lg lg:px-16 text-gray-100 py-16"
       id="about"
     >
       <div className="container mx-auto">

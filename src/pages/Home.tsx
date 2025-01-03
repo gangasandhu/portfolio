@@ -7,7 +7,7 @@ import Socials from "../components/Socials";
 const Home: React.FC = () => {
   return (
     <>
-      <main className="pt-16"> 
+      <main> 
         <Hero />
         <About />
         <Projects />

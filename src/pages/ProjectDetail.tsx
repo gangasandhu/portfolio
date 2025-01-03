@@ -69,15 +69,13 @@ const ProjectDetail: React.FC = () => {
                         className="my-8 text-center"
                     >
                         <h1 className="text-4xl md:text-5xl font-extrabold">{project.name}</h1>
-                        <p className="text-gray-400 mt-2 max-w-2xl mx-auto">
+                        <p className="text-gray-400 mt-2 mx-auto">
                             {project.description}
                         </p>
                         {project.video && (
                             <Iframe url={project.video}
-                                    width="640px"
-                                    height="320px"
                                     id=""
-                                    className="my-8 mx-auto"
+                                    className="my-8 mx-auto w-full h-[60vw] lg:w-[50vw] lg:h-[45vh]"
                                     display="block"
                                      />
                         )}

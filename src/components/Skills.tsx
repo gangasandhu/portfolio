@@ -102,7 +102,7 @@ const Skills: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="max-w-3xl mx-auto text-center text-lg md:text-xl text-gray-300 mb-16"
+          className="max-w-3xl mx-auto text-center md:text-xl text-gray-300 mb-16"
         >
           Skilled software developer with expertise in JavaScript, React, and Node.js.
           Experienced in using Docker, CI/CD, and AWS for efficient application deployment.
@@ -113,7 +113,7 @@ const Skills: React.FC = () => {
 
         {/* Skills Grid */}
         <motion.div
-          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8"
+          className="grid sm:grid-cols-3 lg:grid-cols-4 gap-8"
           initial="hidden"
           whileInView="visible"
           variants={{

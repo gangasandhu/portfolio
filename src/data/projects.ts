@@ -48,7 +48,7 @@ export interface Project {
         "An AI-assisted code-learning platform with an integrated code editor, compiler, and AI assistant. Built to provide an interactive and engaging experience for coding enthusiasts.",
       liveDemo: "https://gangasandhu.github.io/smart-script/", // Replace with your actual live demo URL
       repository: "https://github.com/gangasandhu/smart-script", // Replace with your actual repository URL
-      technologies: ["React", "JavaScript", "GitHub", "CI/CD", "Docker"],
+      technologies: ["React", "JavaScript", "GitHub", "CI/CD"],
       detailedDescription:
         "SmartScript revolutionizes the way individuals learn to code by integrating AI assistance into the learning process. Users can write and compile code within the platform, receive real-time feedback from the AI assistant, and track their progress through personalized learning paths. The platform emphasizes interactivity and engagement, making coding education accessible and enjoyable.",
       features: [
@@ -73,7 +73,7 @@ export interface Project {
         "A real-time chess game application with user authentication, game history, and live gameplay. Leveraged Redis for caching and Socket.io for real-time functionality.",
       liveDemo: "https://chessgame-live-demo.com", // Replace with your actual live demo URL
       repository: "https://github.com/gangasandhu/2650Project", // Replace with your actual repository URL
-      technologies: ["Node.js", "React", "GitHub", "JavaScript", "AWS"],
+      technologies: ["Node.js", "React", "JavaScript", "AWS"],
       detailedDescription:
         "Chess Game is a feature-rich application that allows users to engage in real-time chess matches with friends or AI opponents. It includes secure user authentication, detailed game history logs, and live gameplay capabilities. The backend is optimized with Redis caching for improved performance, and Socket.io facilitates seamless real-time interactions.",
       features: [

@@ -91,11 +91,11 @@ const Projects: React.FC = () => {
                 <p className="text-gray-300 mb-6">{project.description}</p>
 
                 {/* Technologies Used */}
-                <div className="flex flex-wrap space-x-4 mb-6">
+                <div className="flex flex-wrap mb-6">
                   {project.technologies.map((tech, idx) => (
                     <motion.div
                       key={idx}
-                      className="flex items-center justify-center bg-gray-700 p-2 rounded-md"
+                      className="flex items-center justify-center bg-gray-700 p-2 mr-4 my-2 rounded-md"
                       whileHover={{ scale: 1.2, rotate: 10 }}
                       transition={{ type: "spring", stiffness: 300 }}
                     >

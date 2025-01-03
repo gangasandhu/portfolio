@@ -13,7 +13,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="bg-gradient-to-r from-indigo-900 to-gray-900 fixed top-0 left-0 w-full z-50 shadow-lg">
-      <div className="container mx-auto flex items-center justify-between px-6 py-4">
+      <div className="container mx-auto flex items-center justify-between px-6 lg:px-0 py-4">
         {/* Logo */}
         <Link to="" className="text-white text-2xl font-extrabold flex items-center">
           <span className="text-indigo-400">Ganga</span>
