@@ -23,7 +23,7 @@ export interface Project {
       image: "https://github.com/gangasandhu/devlink/blob/main/showcase/Home.png?raw=true",
       description:
         "A comprehensive platform for developers, content creators, and tech enthusiasts. Features include blog management, online coding, and social networking capabilities.",
-      liveDemo: "https://devlink-live-demo.com", // Replace with your actual live demo URL
+      liveDemo: "http://ec2-34-201-150-93.compute-1.amazonaws.com/", // Replace with your actual live demo URL
       repository: "https://github.com/gangasandhu/devlink", // Replace with your actual repository URL
       technologies: ["JavaScript", "React", "Node.js", "GitHub"],
       detailedDescription:
@@ -38,14 +38,15 @@ export interface Project {
         "https://github.com/gangasandhu/devlink/blob/main/showcase/Home.png?raw=true",
         // Add more screenshot URLs as needed
       ],
+      video: "https://www.youtube.com/embed/APwXcWPrQFg?si=EwNRZ_jIJSf9lcoR",
     },
     {
       name: "SmartScript",
       title: "smartscript",
-      image: "https://github.com/gangasandhu/smart-script/blob/main/showcase/home.png?raw=true",
+      image: "https://github.com/gangasandhu/smart-script/blob/main/showcase/compile.png?raw=true",
       description:
         "An AI-assisted code-learning platform with an integrated code editor, compiler, and AI assistant. Built to provide an interactive and engaging experience for coding enthusiasts.",
-      liveDemo: "https://smartscript-live-demo.com", // Replace with your actual live demo URL
+      liveDemo: "https://gangasandhu.github.io/smart-script/", // Replace with your actual live demo URL
       repository: "https://github.com/gangasandhu/smart-script", // Replace with your actual repository URL
       technologies: ["React", "JavaScript", "GitHub", "CI/CD", "Docker"],
       detailedDescription:
@@ -57,7 +58,9 @@ export interface Project {
         "Seamless CI/CD pipeline for continuous integration and deployment",
       ],
       screenshots: [
-        "https://github.com/gangasandhu/smart-script/blob/main/showcase/home.png?raw=true",
+        "https://github.com/gangasandhu/smart-script/blob/main/showcase/compile.png?raw=true",
+        "https://github.com/gangasandhu/smart-script/blob/main/showcase/compile-light.png?raw=true",
+        "https://github.com/gangasandhu/smart-script/blob/main/showcase/ai-chat.png?raw=true"
         // Add more screenshot URLs as needed
       ],
       video: "https://www.youtube.com/embed/ybYCRZT-MQ8?si=EDmWFWRLYvDyaVNW",
@@ -65,11 +68,11 @@ export interface Project {
     {
       name: "Chess Game",
       title: "chess-game",
-      image: "https://upload.wikimedia.org/wikipedia/commons/5/51/SmallFish_screenshot_%28Computer_to_move%2C_computer_analysis_shown%29.png",
+      image: "https://github.com/gangasandhu/2650Project/blob/main/showcase/game.png?raw=true",
       description:
         "A real-time chess game application with user authentication, game history, and live gameplay. Leveraged Redis for caching and Socket.io for real-time functionality.",
       liveDemo: "https://chessgame-live-demo.com", // Replace with your actual live demo URL
-      repository: "https://github.com/gangasandhu/chess-game", // Replace with your actual repository URL
+      repository: "https://github.com/gangasandhu/2650Project", // Replace with your actual repository URL
       technologies: ["Node.js", "React", "GitHub", "JavaScript", "AWS"],
       detailedDescription:
         "Chess Game is a feature-rich application that allows users to engage in real-time chess matches with friends or AI opponents. It includes secure user authentication, detailed game history logs, and live gameplay capabilities. The backend is optimized with Redis caching for improved performance, and Socket.io facilitates seamless real-time interactions.",
@@ -82,9 +85,12 @@ export interface Project {
         "Scalable deployment on AWS",
       ],
       screenshots: [
-        "https://upload.wikimedia.org/wikipedia/commons/5/51/SmallFish_screenshot_%28Computer_to_move%2C_computer_analysis_shown%29.png",
+        "https://github.com/gangasandhu/2650Project/blob/main/showcase/home.png?raw=true",
+        "https://github.com/gangasandhu/2650Project/blob/main/showcase/game.png?raw=true",
+        "https://github.com/gangasandhu/2650Project/blob/main/showcase/game_history.png?raw=true",
         // Add more screenshot URLs as needed
       ],
+      video: "https://www.youtube.com/embed/hp9say788Jw?si=4qGX6QodgGcXxHD7"
     },
   ];
   
