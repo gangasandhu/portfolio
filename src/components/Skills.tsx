@@ -81,7 +81,7 @@ const skills = [
 const Skills: React.FC = () => {
   return (
     <section
-      className="text-gray-100 px-6 lg:px-16 py-16"
+      className="text-color-primary px-6 lg:px-16 py-16"
       id="skills"
     >
       <div className="container mx-auto">
@@ -102,7 +102,7 @@ const Skills: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="max-w-3xl mx-auto text-center md:text-xl text-gray-300 mb-16"
+          className="max-w-3xl mx-auto text-center md:text-xl mb-16"
         >
           Skilled software developer with expertise in JavaScript, React, and Node.js.
           Experienced in using Docker, CI/CD, and AWS for efficient application deployment.
@@ -128,7 +128,7 @@ const Skills: React.FC = () => {
           {skills.map((skill, index) => (
             <motion.div
               key={index}
-              className="flex flex-col items-center text-center p-6 bg-gray-800 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300"
+              className="flex flex-col items-center text-center p-6 bg-secondary-200 rounded-lg shadow-lg hover:bg-secondary-300 transition duration-300"
               variants={{
                 hidden: { opacity: 0, y: 50 },
                 visible: { opacity: 1, y: 0 },
@@ -137,7 +137,7 @@ const Skills: React.FC = () => {
             >
               {skill.icon}
               <h3 className="mt-4 text-xl font-semibold">{skill.name}</h3>
-              <p className="mt-2 text-gray-400">{skill.description}</p>
+              <p className="mt-2 text-color-secondary">{skill.description}</p>
             </motion.div>
           ))}
         </motion.div>

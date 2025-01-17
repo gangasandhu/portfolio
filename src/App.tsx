@@ -11,13 +11,16 @@ import Projects from "./components/Projects";
 import About from "./components/About";
 
 const App: React.FC = () => {
+
+  
   return (
     <div
-      className="bg-gradient-to-r from-indigo-900 to-gray-900 min-h-screen text-white pt-16"
-    >
+      className={`bg-gradient-to-r from-primaryDark to-primary min-h-screen text-color-primary pt-16 transition duration-500 ease-in-out`}>
       <BrowserRouter>
         <ScrollToTop />
         <Header />
+      
+
         <Routes>
           <Route path="/projects/:title" element={<ProjectDetail />} />
           <Route path="/contact" element={<Contact />} />

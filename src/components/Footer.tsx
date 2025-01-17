@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-800 text-gray-100 px-6 lg:px-16 py-8">
+    <footer className="bg-secondary-200 text-color-primary px-6 lg:px-16 py-8">
       <div className="container mx-auto text-center">
         {/* Site Branding */}
         <motion.div
@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
           className="mb-4"
         >
           <h1 className="text-2xl font-bold">Ganga Singh</h1>
-          <p className="text-gray-400">Full Stack Developer</p>
+          <p className="text-color-secondary">Full Stack Developer</p>
         </motion.div>
 
         {/* Navigation Links */}
@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
             <li>
               <Link
                 to=""
-                className="hover:text-indigo-400 transition-colors duration-300"
+                className="hover:text-accent-primary transition-colors duration-300"
               >
                 Home
               </Link>
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
             <li>
               <Link
                 to="/about"
-                className="hover:text-indigo-400 transition-colors duration-300"
+                className="hover:text-accent-primary transition-colors duration-300"
               >
                 About
               </Link>
@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
             <li>
               <Link
                 to="/skills"
-                className="hover:text-indigo-400 transition-colors duration-300"
+                className="hover:text-accent-primary transition-colors duration-300"
               >
                 Skills
               </Link>
@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
             <li>
               <Link
                 to="/projects"
-                className="hover:text-indigo-400 transition-colors duration-300"
+                className="hover:text-accent-primary transition-colors duration-300"
               >
                 Projects
               </Link>
@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
             <li>
               <Link
                 to="/contact"
-                className="hover:text-indigo-400 transition-colors duration-300"
+                className="hover:text-accent-primary transition-colors duration-300"
               >
                 Contact
               </Link>
@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.6 }}
           viewport={{ once: true }}
-          className="text-gray-500 text-sm"
+          className="text-color-secondary text-sm"
         >
           &copy; {new Date().getFullYear()} Ganga Singh. All rights reserved.
         </motion.p>

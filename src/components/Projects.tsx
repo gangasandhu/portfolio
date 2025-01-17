@@ -35,7 +35,7 @@ const technologyIcons: { [key: string]: JSX.Element } = {
 const Projects: React.FC = () => {
   return (
     <section
-      className="text-gray-100 px-6 lg:px-16 py-16"
+      className="text-color-primary px-6 lg:px-16 py-16"
       id="projects"
     >
       <div className="container mx-auto">
@@ -67,7 +67,7 @@ const Projects: React.FC = () => {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+              className="bg-secondary-100 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
               variants={{
                 hidden: { opacity: 0, y: 50 },
                 visible: { opacity: 1, y: 0 },
@@ -85,22 +85,22 @@ const Projects: React.FC = () => {
               {/* Project Details */}
               <div className="p-6">
                 {/* Project Name */}
-                <h3 className="text-2xl font-bold mb-4">{project.name}</h3>
+                <h3 className="text-2xl primary font-bold mb-4">{project.name}</h3>
 
                 {/* Project Description */}
-                <p className="text-gray-300 mb-6">{project.description}</p>
+                <p className="text-color-secondary mb-6">{project.description}</p>
 
                 {/* Technologies Used */}
                 <div className="flex flex-wrap mb-6">
                   {project.technologies.map((tech, idx) => (
                     <motion.div
                       key={idx}
-                      className="flex items-center justify-center bg-gray-700 p-2 mr-4 my-2 rounded-md"
+                      className="flex items-center justify-center bg-secondary-300 p-2 mr-4 my-2 rounded-md"
                       whileHover={{ scale: 1.2, rotate: 10 }}
                       transition={{ type: "spring", stiffness: 300 }}
                     >
                       {technologyIcons[tech] || (
-                        <FaExternalLinkAlt className="w-6 h-6 text-gray-400" />
+                        <FaExternalLinkAlt className="w-6 h-6" />
                       )}
                     </motion.div>
                   ))}
@@ -110,7 +110,7 @@ const Projects: React.FC = () => {
                 <Link
                   to={`/projects/${project.title}`}
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-indigo-400 hover:text-indigo-300 font-semibold"
+                  className="inline-flex items-center text-accent-primary hover:text-accent-primary-focus font-semibold"
                 >
                   View Project <FaExternalLinkAlt className="ml-2" />
                 </Link>

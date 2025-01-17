@@ -2,3 +2,68 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    /* Backgrounds */
+    --bg-primary-dark: hsl(217, 33%, 17%);
+    --bg-primary: hsl(221, 39%, 11%);
+    /* gray.900 */
+    --bg-secondary: #1F2937;
+    /* gray.800 */
+    --bg-accent: #1E293B;
+    /* indigo.900 */
+
+    /* Text */
+    --text-primary: #F3F4F6;
+    /* gray.100 */
+    --text-secondary: #9CA3AF;
+    /* gray.400 */
+
+    /* Borders */
+    --border: #4B5563;
+    /* gray.600 */
+
+
+    /* yellow.500 */
+}
+
+.dark {
+    /* background colors */
+    --bg-primary-dark: hsl(217, 33%, 17%);
+    --bg-primary: hsl(221, 39%, 11%);
+    --bg-secondary: rgb(31,41,55);
+    --bg-secondary-light: rgba(17, 24, 39);
+    --bg-secondary-dark: rgb(55,68,86);
+
+    /* Interactive Colors */
+    --accent-primary: rgb(99, 102, 241);
+    --accent-primary-focus: rgb(99, 102, 241, 0.8);
+    --accent-secondary: rgb(244, 63, 94);
+    --accent-secondary-focus: rgb(244, 63, 94, 0.8);
+
+    /* Text Colors */
+    --color-primary: hsl(0, 0%, 93%);
+    --color-secondary: hsl(0, 0%, 80%);
+}
+
+.light {
+    /* background colors */
+    --bg-primary-dark: rgba(234, 231, 220);
+    --bg-primary: rgba(234, 231, 220);
+    --bg-secondary: rgba(216, 195, 165);
+    --bg-secondary-light: rgba(216, 195, 165, 0.5);
+    --bg-secondary-dark: rgba(215, 179, 128, 0.8);
+
+
+    /* Interactive Colors */
+    --accent-primary: rgba(233, 128, 116);
+    --accent-primary-focus: rgb(231, 102, 80);
+    --accent-secondary: rgba(232, 90, 79);
+    --accent-secondary-focus: rgb(232, 71, 60);
+
+    --color-primary: rgba(40, 40, 40, 1);
+    /* Deep charcoal (legible, strong, earthy) */
+    --color-secondary: #666666;
+    /* Medium gray (subtle, easy on the eyes) */
+
+}

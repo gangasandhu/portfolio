@@ -43,7 +43,7 @@ const ProjectDetail: React.FC = () => {
 
     if (!project) {
         return (
-            <div className="bg-gray-900 text-gray-100 min-h-screen flex items-center justify-center">
+            <div className="bg-secondary text-gray-100 min-h-screen flex items-center justify-center">
                 <h2 className="text-2xl">Project not found.</h2>
             </div>
         );
@@ -55,7 +55,7 @@ const ProjectDetail: React.FC = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
-                className="bg-gray-900 text-gray-100 min-h-screen"
+                className="bg-primary text-color-primary min-h-screen"
             >
                 <section className="container mx-auto px-6 lg:px-16 py-16">
 
@@ -69,7 +69,7 @@ const ProjectDetail: React.FC = () => {
                         className="my-8 text-center"
                     >
                         <h1 className="text-4xl md:text-5xl font-extrabold">{project.name}</h1>
-                        <p className="text-gray-400 mt-2 mx-auto">
+                        <p className="text-color-secondary mt-2 mx-auto">
                             {project.description}
                         </p>
                         {project.video && (
@@ -92,7 +92,7 @@ const ProjectDetail: React.FC = () => {
                         className="mb-8"
                     >
                         <h2 className="text-2xl font-bold mb-4">About the Project</h2>
-                        <p className="text-gray-300">{project.detailedDescription}</p>
+                        <p className="text-color-secondary">{project.detailedDescription}</p>
                     </motion.div>
 
                     {/* Features */}
@@ -104,7 +104,7 @@ const ProjectDetail: React.FC = () => {
                         className="mb-8"
                     >
                         <h2 className="text-2xl font-bold mb-4">Key Features</h2>
-                        <ul className="list-disc list-inside text-gray-300 space-y-2">
+                        <ul className="list-disc list-inside text-color-secondary space-y-2">
                             {project.features.map((feature, idx) => (
                                 <li key={idx}>{feature}</li>
                             ))}
@@ -124,7 +124,7 @@ const ProjectDetail: React.FC = () => {
                             {project.technologies.map((tech, idx) => (
                                 <div key={idx} className="flex items-center space-x-1 mb-2">
                                     {technologyIcons[tech] || (
-                                        <span className="text-gray-400">•</span>
+                                        <span className="text-color-secondary">•</span>
                                     )}
                                     <span>{tech}</span>
                                 </div>
@@ -170,7 +170,7 @@ const ProjectDetail: React.FC = () => {
                             href={project.liveDemo}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center justify-center bg-indigo-500 text-white px-6 py-3 rounded-md hover:bg-indigo-600 transition-colors duration-300 shadow-lg"
+                            className="inline-flex items-center justify-center bg-accent-primary text-white px-6 py-3 rounded-md hover:bg-accent-priamary-focus transition-colors duration-300 shadow-lg"
                         >
                             Live Demo <FaExternalLinkAlt className="ml-2" />
                         </a>

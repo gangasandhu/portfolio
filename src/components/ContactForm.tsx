@@ -73,12 +73,12 @@ const ContactForm: React.FC = () => {
 
     return (
         <div className="max-w-2xl mx-auto mb-12">
-            <h2 className="text-3xl font-semibold mb-6 dark:text-white">Send a Message</h2>
+            <h2 className="text-3xl font-semibold mb-6">Send a Message</h2>
             <form ref={form} onSubmit={sendEmail} noValidate>
                 <div className="mb-4">
                     <label
                         htmlFor="user_name"
-                        className="block text-gray-700 dark:text-gray-300 font-medium mb-2"
+                        className="block text-color-secondary font-medium mb-2"
                     >
                         Name
                     </label>
@@ -89,7 +89,7 @@ const ContactForm: React.FC = () => {
                         className={`w-full px-4 py-2 border ${errors.user_name
                             ? "border-red-500 dark:border-red-400"
                             : "border-gray-300 dark:border-gray-600"
-                            } rounded-md bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400`}
+                            } rounded-md bg-secondary-200 text-color-primary focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400`}
                         placeholder="Your Name"
                     />
                     {errors.user_name && (
@@ -101,7 +101,7 @@ const ContactForm: React.FC = () => {
                 <div className="mb-4">
                     <label
                         htmlFor="user_email"
-                        className="block text-gray-700 dark:text-gray-300 font-medium mb-2"
+                        className="block text-color-secondary font-medium mb-2"
                     >
                         Email
                     </label>
@@ -112,7 +112,7 @@ const ContactForm: React.FC = () => {
                         className={`w-full px-4 py-2 border ${errors.user_email
                             ? "border-red-500 dark:border-red-400"
                             : "border-gray-300 dark:border-gray-600"
-                            } rounded-md bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400`}
+                            } rounded-md bg-secondary-200 text-color-primary  focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400`}
                         placeholder="you@example.com"
                     />
                     {errors.user_email && (
@@ -124,7 +124,7 @@ const ContactForm: React.FC = () => {
                 <div className="mb-4">
                     <label
                         htmlFor="message"
-                        className="block text-gray-700 dark:text-gray-300 font-medium mb-2"
+                        className="block text-color-secondary font-medium mb-2"
                     >
                         Message
                     </label>
@@ -135,7 +135,7 @@ const ContactForm: React.FC = () => {
                         className={`w-full px-4 py-2 border ${errors.message
                             ? "border-red-500 dark:border-red-400"
                             : "border-gray-300 dark:border-gray-600"
-                            } rounded-md bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400`}
+                            } rounded-md bg-secondary-200 text-color-primary focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400`}
                         placeholder="Your message..."
                     ></textarea>
                     {errors.message && (
@@ -146,7 +146,7 @@ const ContactForm: React.FC = () => {
                 </div>
                 <motion.button
                     type="submit"
-                    className="w-full bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    className="w-full bg-accent-primary text-white py-2 px-4 rounded-md hover:bg-accent-primary-focus transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     disabled={isSubmitting}
