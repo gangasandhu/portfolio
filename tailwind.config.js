@@ -29,7 +29,23 @@ export default {
         },
         yellow: {
           500: "#FBBF24",
-        }
+        },
+        primaryDark: "var(--bg-primary-dark)",
+        primary: "var(--bg-primary)",
+        secondary: {
+          100: "var(--bg-secondary-light)",
+          200: "var(--bg-secondary)",
+          300: "var(--bg-secondary-dark)",
+        },
+        "accent-primary": "var(--accent-primary)",
+        "accent-primary-focus": "var(--accent-primary-focus)",
+        "accent-secondary": "var(--accent-secondary)",
+        "accent-secondary-focus": "var(--accent-secondary-focus)",
+        "color-primary": "var(--color-primary)",
+        "color-secondary": "var(--color-secondary)",
+        border: 'var(--border)',
+
+        
       },
     },
   },

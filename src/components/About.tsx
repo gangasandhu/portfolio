@@ -10,7 +10,7 @@ import {
 const About: React.FC = () => {
   return (
     <section
-      className="bg-gray-900 px-6 mx-auto w-[90vw] border-none rounded-lg lg:px-16 text-gray-100 py-16"
+      className="bg-secondary-100 px-6 mx-auto w-[90vw] border-none rounded-lg lg:px-16 py-16"
       id="about"
     >
       <div className="container mx-auto">
@@ -20,7 +20,7 @@ const About: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-extrabold text-center mb-8 text-indigo-400"
+          className="text-3xl md:text-4xl font-extrabold text-center mb-8 text-accent-secondary"
         >
           Who Am I?
         </motion.h2>
@@ -33,13 +33,13 @@ const About: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           viewport={{ once: true }}
         >
-          <p className="text-lg md:text-xl text-gray-300 mb-6">
+          <p className="text-lg md:text-xl mb-6">
             I'm a skilled software developer with a strong foundation in JavaScript, React, and Node.js. Over the years, I've honed my expertise in building scalable, interactive web applications and deploying them efficiently using tools like Docker, CI/CD pipelines, and AWS. My passion for problem-solving and collaborative teamwork drives me to deliver impactful solutions that make a difference.
           </p>
-          <p className="text-lg md:text-xl text-gray-300 mb-6">
+          <p className="text-lg md:text-xl mb-6">
             My journey as a developer began with a deep curiosity for technology and its potential to solve complex problems. Through hands-on projects like developing a real-time chess game and an AI-assisted code-learning application, I've built expertise in creating seamless user experiences and robust back-end systems.
           </p>
-          <p className="text-lg md:text-xl text-gray-300">
+          <p className="text-lg md:text-xl">
           I have completed an Associate of Science in Computer Science and a citation in Full-Stack Web development at Langara College.
           </p>
         </motion.div>
@@ -81,7 +81,7 @@ const About: React.FC = () => {
           }].map((skill, index) => (
             <motion.div
               key={index}
-              className="flex flex-col items-center text-center p-6 bg-gray-800 rounded-lg shadow-md hover:bg-gray-700 transition duration-300"
+              className="flex flex-col items-center text-center p-6 bg-secondary-200 rounded-lg shadow-md hover:bg-secondary-300 transition duration-300"
               variants={{
                 hidden: { opacity: 0, scale: 0.8 },
                 visible: { opacity: 1, scale: 1 },
@@ -90,7 +90,7 @@ const About: React.FC = () => {
             >
               {skill.icon}
               <h3 className="text-xl font-bold mb-2">{skill.title}</h3>
-              <p className="text-gray-400">{skill.description}</p>
+              <p className="text-color-secondary">{skill.description}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -105,7 +105,7 @@ const About: React.FC = () => {
         >
           <a
             href="#projects"
-            className="bg-indigo-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-indigo-600 transition duration-300 flex items-center"
+            className="bg-accent-secondary text-white px-6 py-3 rounded-lg shadow-md hover:bg-accent-secondary-focus hover:scale-105 transition duration-300 flex items-center"
           >
             View My Projects
             <FaComments className="ml-2 w-5 h-5" />

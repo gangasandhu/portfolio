@@ -10,7 +10,7 @@ const Contact: React.FC = () => {
         <div>
             {/* contact hero */}
             <motion.div
-                className="bg-gray-900 text-white my-8 py-20"
+                className="bg-secondary-100 text-color-primary my-8 py-20"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
@@ -41,7 +41,7 @@ const Contact: React.FC = () => {
                             transition={{ duration: 0.5, delay: 0.2 }}
                             viewport={{ once: true }}
                         >
-                            <FaEnvelope className="text-indigo-500 w-6 h-6 mr-4" />
+                            <FaEnvelope className="text-accent-primary w-6 h-6 mr-4" />
                             <div>
                                 <h3 className="text-xl font-medium">Email</h3>
                                 <p className="text-gray-500">sr.gangasingh@gmail.com</p>
@@ -54,7 +54,7 @@ const Contact: React.FC = () => {
                             transition={{ duration: 0.5, delay: 0.4 }}
                             viewport={{ once: true }}
                         >
-                            <FaPhone className="text-indigo-500 w-6 h-6 mr-4" />
+                            <FaPhone className="text-accent-primary w-6 h-6 mr-4" />
                             <div>
                                 <h3 className="text-xl font-medium">Phone</h3>
                                 <p className="text-gray-500">+1 (604) 906-2629</p>
@@ -67,7 +67,7 @@ const Contact: React.FC = () => {
                             transition={{ duration: 0.5, delay: 0.6 }}
                             viewport={{ once: true }}
                         >
-                            <FaMapMarkerAlt className="text-indigo-500 w-6 h-6 mr-4" />
+                            <FaMapMarkerAlt className="text-accent-primary w-6 h-6 mr-4" />
                             <div>
                                 <h3 className="text-xl font-medium">Address</h3>
                                 <p className="text-gray-500">6476 133a, Surrey, BC, V3W 7E3</p>

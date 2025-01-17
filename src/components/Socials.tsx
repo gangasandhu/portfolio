@@ -46,7 +46,7 @@ const socials = [
 const Socials: React.FC = () => {
   return (
     <section
-      className="bg-gray-900 w-[80vw] mx-auto my-16 rounded-lg text-gray-100 px-6 lg:px-16 py-16"
+      className="bg-secondary-100 w-[80vw] mx-auto my-16 rounded-lg text-color-primary px-6 lg:px-16 py-16"
       id="socials"
     >
       <div className="container mx-auto text-center">
@@ -67,7 +67,7 @@ const Socials: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="text-lg md:text-xl text-gray-400 mb-12"
+          className="text-lg md:text-xl text-color-secondary mb-12"
         >
           I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to reach out through any of the platforms below!
         </motion.p>
